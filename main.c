@@ -1,7 +1,15 @@
 #include <stdio.h>
+#include <curses.h>
 
 int main(char* argvs[], int argc) {
-  printf("Hello World !\n");
+  initscr();
+
+  printw("Hello World !");
+  refresh();
+
+  getch();
+
+  endwin();
 
   return 0;
 }

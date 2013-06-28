@@ -3,5 +3,5 @@
 all: main
 
 main: main.c
-	gcc -o $@ $<
+	gcc -lncurses -o $@ $<
 
